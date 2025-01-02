@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- inline element only takes the space they need ex = image and input.  
+ The inline-block element takes a part of text such as Sstrong
+ they appear within a line of text and 
+ the last is block element, it takes up the entire space like text and paragraph. -->
+<html> 
+  
+  <head>
+
+    <title>Youtube.com Clone</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+
+    <body>
+
+    <div class="header">
+      <div class="left">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+
+      <div class="middle">
+        <input class="search-bar" type="textbox" placeholder="Search">
+        <button class="search-button"> 
+          <img class="search-icon" src="icons/search.svg">
+        </button>
+        <button class="voice-button"> 
+          <img class="voice-icon" src="icons/voice-search-icon.svg">
+        </button>
+      </div>
+
+      <div class="right">
+        <img class="upload-icon" src="icons/upload.svg">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <img class="current-user-icon" src="channelpics/my-channel.jpeg">
+      </div>
+      
+    </div>
+    
+    <div class="video-grid"> 
+
+        <!-- div stands for division is just a box -->
+        <!-- div is a block element -->
+        <!-- div can contain any elements inside -->
+        <!-- div is a container -->
+        <div class="video-preview"> 
+          <!-- Vertical layout and horizontal layout -->
+          <!-- first row image -->
+          <div class="thumbnail-vert-row">
+            <img class="thumbnails" src="Thumbnails/thumbnail-1.webp">
+          </div>
+      
+          <!-- thumbnail stats -->
+           <!-- using grid style -->
+          <div class="video-info-grid"> 
+            <!-- Horizontal lanes -->
+            <div class="channel-picture">
+              <img class="profile-picture" src="channelpics/channel-1.jpeg">
+            </div>
+            <!-- Horizontal lanes -->
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+          
+              <p class="video-auther">
+                Marques Brownlee
+              </p>
+          
+              <!-- html 4 entity ->&#183; -->
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>
+            
+          </div>
+      
+        </div> 
+
+        <div class="video-preview"> 
+          <!-- Vertical layout and horizontal layout -->
+          <!-- first row image -->
+          <div class="thumbnail-vert-row">
+            <img class="thumbnails" src="Thumbnails/thumbnail-2.webp">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info-grid"> 
+            <!-- Horizontal lanes -->
+            <div class="channel-picture">
+              <img class="profile-picture" src="channelpics/channel-2.jpeg">
+            </div>
+            <!-- Horizontal lanes -->
+            <div class="video-info">
+              <p class="video-title">
+                Try Not To Laugh Challenge #9
+              </p>
+          
+              <p class="video-auther">
+                Markiplier
+              </p>
+          
+              <!-- html 4 entity ->&#183; -->
+              <p class="video-stats">
+                19M views &#183; 4 years ago
+              </p>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="video-preview"> 
+          <!-- Vertical layout and horizontal layout -->
+          <!-- first row image -->
+          <div class="thumbnail-vert-row">
+            <img class="thumbnails" src="Thumbnails/thumbnail-3.webp">
+          </div>
+      
+          <!-- thumbnail stats -->
+          <div class="video-info-grid"> 
+            <!-- Horizontal lanes -->
+            <div class="channel-picture">
+              <img class="profile-picture" src="channelpics/channel-3.jpeg">
+            </div>
+            <!-- Horizontal lanes -->
+            <div class="video-info">
+              <p class="video-title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+          
+              <p class="video-auther">
+                SSSniperWolf
+              </p>
+          
+              <!-- html 4 entity ->&#183; -->
+              <p class="video-stats">
+                12M views &#183; 1 year ago
+              </p>
+            </div>
+            
+        </div>
+    
+      </div> 
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-4.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-4.jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+        
+            <p class="video-auther">
+              Veritasium
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              18M views &#183; 4 months ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-5.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-5.jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+        
+            <p class="video-auther">
+              CS Dojo
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              519K views &#183; 5 years ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-6.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-6.jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              Anything You Can Fit In The Circle I’ll Pay For
+            </p>
+        
+            <p class="video-auther">
+              MrBeast
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              141M views &#183; 1 year ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-7.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-7.jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              Why Planes Don't Fly Over Tibet
+            </p>
+        
+            <p class="video-auther">
+              RealLifeLore
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              6.6M views &#183; 1 year ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-8.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-8 (1).jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              Inside The World's Biggest Passenger Plane
+            </p>
+        
+            <p class="video-auther">
+              Tech Vision
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              3.7M views &#183; 10 months ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+      <div class="video-preview"> 
+        <!-- Vertical layout and horizontal layout -->
+        <!-- first row image -->
+        <div class="thumbnail-vert-row">
+          <img class="thumbnails" src="Thumbnails/thumbnail-9.webp">
+        </div>
+        <!-- Horizontal lanes -->
+        <div class="video-info-grid"> 
+          <!-- Horizontal lanes -->
+          <div class="channel-picture">
+            <img class="profile-picture" src="channelpics/channel-9.jpeg">
+          </div>
+          <!-- Horizontal lanes -->
+          <div class="video-info">
+            <p class="video-title">
+              The SECRET to Super Human STRENGTH
+            </p>
+        
+            <p class="video-auther">
+              ThenX
+            </p>
+        
+            <!-- html 4 entity ->&#183; -->
+            <p class="video-stats">
+              20M views &#183; 1 year ago
+            </p>
+         </div>
+          
+        </div>
+
+      </div>
+
+
+    </div>
+
+    
+
+  </body>
+
+
+</html>

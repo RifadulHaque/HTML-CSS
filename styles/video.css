@@ -1,0 +1,78 @@
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/* This is the div container */
+/* .video-preview { */
+    /* width: 300px; */
+    /* display: inline-block; */
+    /* setting this to top so that incase there is a
+    size mismatch the picture always stays at top and 
+    alligned */
+    /* vertical-align: top; */
+    /* margin-right: 15px; */
+/* } */
+
+.thumbnail-vert-row {
+    margin-bottom: 8px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.thumbnails {
+    width: 100%; 
+    /* height: 200px; */
+    /* object-fit: cover;
+    /* incase if the image does not fit in the area, use object=positon */
+    /* margin-bottom: 20px; */
+    /* by default image is inline-block */
+    /* display is used to change between block and inline-block */
+    /* display: block; converted to block */
+}
+
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    /* as we selected 400,500,700 */
+    font-weight: 500; 
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+/* allign the div to the top */
+.channel-picture {
+    /* display: inline-block;
+    width: 50px; */
+    /* vertical-align: top; */
+}
+
+.video-info {
+    /* display: inline-block;
+    width: 200px; */
+}
+
+/* take 100% of that div container */
+.profile-picture {
+    width: 36px;
+    border-radius: 36px;
+    
+}
+
+/* text by default is a block element */
+.video-auther,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-auther {
+    margin-bottom: 4px;
+}
