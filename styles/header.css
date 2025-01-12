@@ -3,6 +3,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* keep the header above all
+    the higher the Z value is the 
+    more top it is */
+    z-index: 100;
+    
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
 }
 
 .left {
@@ -46,9 +60,8 @@
 }
 
 .search-bar::placeholder {
-    font-family: Roboto, Arial;
+    /* font-family: Roboto, Arial; */
     font-size: 16px;
-    
 }
 
 .search-button {
@@ -57,16 +70,58 @@
     background-color: rgb(240, 240, 240);
     margin-left: -1px;
     margin-right: 8px;
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: solid;
-    border-color: rgb(192, 192, 192);
+    border-color: rgb(192, 192, 192); */
+    border: 1px solid rgb(192, 192, 192);
     border-radius: 2px;
+}
+
+.search-button,
+.voice-button,
+.upload-icon-container,
+.notification-container,
+.youtube-app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip, 
+.voice-button .tooltip,
+.upload-icon-container .tooltip,
+.notification-container .tooltip,
+.youtube-app-container .tooltip {
+    /* font-family: Roboto, Arial; */
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    /* when mose points over the tool tip it does not pop up */
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-container:hover .tooltip,
+.youtube-app-container:hover .tooltip {
+    opacity: 1;
 }
 
 .search-icon {
     height: 25px;
-    margin-top: 4px;
-
+    /* margin-top: 4px; */
 }
 
 .voice-button {
@@ -79,7 +134,7 @@
 
 .voice-icon {
     height: 24px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
 }
 
 .right {
@@ -109,4 +164,22 @@
 .current-user-icon {
     height: 32px;
     border-radius: 16px;
+}
+
+.notification-container {
+    position: relative;
+}
+.notification-counter{
+    position: absolute;
+    color: white;
+    background-color: red;
+    /* font-family: Roboto, Arial; */
+    font-size: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    top: -2px;
+    right: -5px;
 }
